@@ -1,0 +1,8 @@
+// colors
+#define COLOR_PRIMARY_FG 7
+#define COLOR_SECONDARY_FG 7
+#define COLOR_TERTIARY_FG 7
+
+#define COLOR_PRIMARY_BG 0
+#define COLOR_SECONDARY_BG 0
+#define COLOR_TERTIARY_BG 0
