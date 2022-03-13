@@ -22,3 +22,11 @@
 #define KEYMAP_DOWN 'j'
 #define KEYMAP_LEFT 'h'
 #define KEYMAP_RIGHT 'l'
+
+// file operations
+#define KEYMAP_OPEN 'o'
+
+/**********************
+         MISC
+***********************/
+#define WELCOME_MSG "▷  Welcome back!"
