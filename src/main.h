@@ -21,6 +21,8 @@ struct rundata {
     WINDOW * win_status_bar;
     WINDOW * win_alert;
     WINDOW * win_wscreen;
+    char current_alert[512]; // the current alert to be printed during the next refresh.
+    int quit_flag; // quit the program when this is set to 1.
 };
 
 /**********************
@@ -37,3 +39,9 @@ int program_loop(struct rundata* rd);
 
 // this contains the main loop for the program.
 int refresh_ncurses(struct rundata* rd);
+
+// use this when you want to print an alert to the alert bar.
+int alert(struct rundata* rd, char* alert);
+
+// comprehend and act on the user input character.
+int process_input(struct rundata* rd);
