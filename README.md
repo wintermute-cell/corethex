@@ -1,3 +1,5 @@
+# MIGRATED TO NEW PROJECT NETSPACE
+
 # corethex
 .. is a website manager and generator.
 It can manage and display your pages, and allow you to write your website in RUNE automatically generating the HTML structures for you.

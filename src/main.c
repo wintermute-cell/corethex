@@ -66,6 +66,8 @@ int init_program(struct rundata* rd) {
     if (getcwd(cwd, sizeof(cwd)) != NULL)
     {
         allocSize = snprintf(NULL,0,"%s",cwd);
+
+
         rd->dir = malloc(allocSize+1);
         if(rd->dir == NULL) {
             printf("%s\n", "Couldn't initialize dir!\n");
@@ -77,6 +79,7 @@ int init_program(struct rundata* rd) {
         printf("Couldn't open current directory!\n");
         exit(1);
     }
+
 
     // initialize runtime data
     rd->quit_flag = 0;
